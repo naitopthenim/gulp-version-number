@@ -276,7 +276,7 @@ module.exports = function (options) {
     });
   }
 
-  if (!options.outputType || (options.outputType && options.outputType != "string")) {
+  if (!options.returnType || (options.returnType && options.returnType != "string")) {
     return mapStream(function (file, cb) {
       if (file.isNull()) {
         return cb(null, file);
